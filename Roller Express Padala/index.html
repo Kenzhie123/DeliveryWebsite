@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Roller Express Padala</title> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <a href="#" class="navbar-brand" id="logo-text">
+                <div class="logo-image">
+                    <img id="logo_img"src="images/logo_white.png" > 
+                    <h4 id="logo_text">Roll Express Padala</h4>
+                </div>
+            </a>
+                                                     
+            <div class="menu menu_sticky">
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+    
+                </div>
+    
+    
+                <a href="#" class="header_a">Roll Rider</a>
+                <a href="#" class="header_a">Roll Operator</a>
+                <a href="#" class="header_a">Delivery</a>
+                <a href="#" class="header_a">Pabili</a>
+                <a href="#" class="header_a">Pabili Merchant</a>
+                <a href="#" class="header_a">Roll Mall</a>
+                <a href="#" class="header_a">Help Centre</a>
+    
+            </div>
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
+        </header>
+
+        
+        <img src="Images/moped.png" id="moped-image"> 
+        <img src="Images/roller.jpeg" id="background-image">
+        
+
+
+    </div>
+   
+    <div class="where"> Schedule Delivery</div>    
+
+    <div class="container-form">
+        <div id="form-option">
+            <button class="form-option-button form-option-button-selected" id="form-option-asap">ASAP</button>
+
+            <button class="form-option-button" id="form-option-schedule">Schedule Time</button>
+        </div>
+
+        <div class="input-container">
+            
+            <form id="input-form">
+                
+                <h1 class="input-header">Pickup Information</h1>
+                <div id="pickup-container">
+                    <div class="header-input-one-column">
+                        <h3>Pickup Location</h3>
+                        <input type="text" class="text-box-main" placeholder="Enter a pickup location"/>
+                    </div>
+
+                    <div class="header-input-two-column">
+                        <h3>Sender Name</h3>
+                        <h3>Contact Number</h3>
+                        <input type="text" class="text-box-main" placeholder="Ex: John Doe"/>
+                        <input type="text" class="text-box-main" placeholder="Ex: 0921xxxxxxx"/>
+                    </div>
+
+                    <div class="header-input-one-column">
+                        <h3>Landmark</h3>
+                        <input type="text" class="text-box-main" placeholder="Enter a landmark"/>
+                    </div>
+                    
+                    
+                    <div id="schedule-input-container" class="content-gone" >
+                        <h3 class="sched-input-header">Pickup Date</h3>
+                        <select id="pickup-dropdown" class="dropdown-style">
+                            
+                            <option>Today</option>
+                        </select>
+
+                        <div></div>
+
+                        <h3 class="sched-input-header">Pickup Time</h3>
+                        <select id="pickup-dropdown" class="dropdown-style">
+                            
+                            <option>Anytime</option>
+                        </select>
+                    </div>
+                       
+                </div>
+                <h1 class="input-header">Dropoff Information</h1>
+                <div id="dropoff-container">
+                    <div class="header-input-one-column">
+                        <h3>Dropoff Location Location</h3>
+                        <input type="text" class="text-box-main" placeholder="Enter a dropoff location"/>
+                    </div>
+
+                    <div class="header-input-two-column">
+                        <h3>Recipient Name</h3>
+                        <h3>Contact Number</h3>
+                        <input type="text" class="text-box-main" placeholder="Ex: John Doe"/>
+                        <input type="number" class="text-box-main" placeholder="Ex: 0921xxxxxxx"/>
+                    </div>
+
+                    <div class="header-input-one-column">
+                        <h3>Landmark</h3>
+                        <input type="text" class="text-box-main" placeholder="Enter a landmark"/>
+                    </div>
+
+                    <div class="horizontal-lign"></div>
+
+                    <div class="header-input-one-column">
+                        <h3>Vehicle Type</h3>
+                        <select id="vehicle-dropdown" class="dropdown-style-colored">
+                        
+                            <option>1000kg FB</option>
+                            <option>1000kg Van</option>
+                            <option>1000kg Sedan</option>
+                            <option>1000kg Small Truck</option>
+                            <option>1000kg MPV</option>
+                            <option>1000kg MPV</option>
+                            <option>Motorcycle</option>
+                        </select>
+                    </div>
+
+                    <div class="header-input-two-column">
+                        <h3>Distance</h3>
+                        <h3>Duration</h3>
+                        <input type="text" class="text-box-main textbox-disabled"/>
+                        <input type="text" class="text-box-main textbox-disabled" />
+                    </div>
+
+                    <div class="header-input-one-column">
+                        <h3>Promo Code</h3>
+                        <input type="text" class="text-box-main" placeholder="Enter a promo code"/>
+                    </div>
+
+                    <div class="button-two-column">
+                        <button class=" sender-recipient-button sender-recipient-selected" type="button" id="sender-button">Sender</button>
+                        <button class=" sender-recipient-button" type="button" id="recipient-button">Recipient</button>
+                    </div>
+
+
+                    <div class="header-input-one-column">
+                        <h3>Item Description</h3>
+                        <select id="item-description-dropdown" class="dropdown-style-colored" >
+                        
+                            <option>Clothing</option>
+                            <option>Food</option>
+                            <option>Document</option>
+                            <option>Large</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+
+                    <div class="header-textarea-one-column">
+                        <h3>Item Description</h3>
+                        <textarea id="item-description-textarea" placeholder="Ex: Message"></textarea>
+                    </div>
+
+                    <div class="header-checkbox-column">
+                        <h3>Cash on delivery</h3>
+                        <input type="checkbox" />   
+                    </div>
+
+                    <div class="header-checkbox-column">
+                        <h3>Express Delivery</h3>
+                        <input type="checkbox" />   
+                    </div>
+                    
+                    
+                </div>
+
+                <div id="total-container">
+                    <div class="header-input-two-column">
+                        <div></div>
+                        <h2>Total: PHP 0.00</h2>
+                        <div></div>
+                        <button type="button" id="book-now-button">Book Now</button>
+                    </div>
+                </div>
+
+                <div></div> 
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        
+        <div class="two-column-container">
+            <img src="images/roller.png" id="footer-image"/>
+            <div></div>
+            <img src="images/facebook_icon.png" class="small-icon hover-pointer">
+            <img src="images/twitter_icon.png" class="small-icon hover-pointer">
+            <img src="images/instagram_icon.png" class="small-icon hover-pointer">
+                        <div></div>
+
+        </div>
+        <div class="footer-button-container">
+            
+            <p class="footer-link-text hover-pointer">
+                <span class="yellow-hover">Be a</span>
+                <span class="color-white">Roll Rider</span> 
+            </p>
+            
+            <p class="footer-link-text hover-pointer">
+                <span class="yellow-hover">Be a</span>
+                <span class="color-white">Roll Operator</span>
+            </p>
+        </div>
+
+        <div class="footer-button-container">
+            <p class="footer-link-text hover-pointer">
+                <span class="yellow-hover">Book a</span>
+                <span class="color-white">Delivery</span>
+            </p>
+
+            <p class="footer-link-text hover-pointer">
+                <span class="yellow-hover">Book a</span>
+                <span class="color-white">Pabili</span>
+            </p>
+
+            <p class="footer-link-text hover-pointer">
+                <span class="yellow-hover">Book a</span>
+                <span class="color-white">Pabili Merchant</span>
+            </p>
+        </div>
+
+        <div class="footer-button-container">
+            <p class="footer-link-text hover-pointer">
+                <span class="color-whiter">Roll</span>
+                <span class="color-white">Mall</span>
+            </p>
+
+            <p class="footer-link-text hover-pointer">
+                <span class="color-white">Help</span>
+                <span class="color-white">Center</span>
+            </p>
+            <p class="footer-link-text hover-pointer">
+                <span class="color-white">Contact</span>
+                <span class="color-white">Us</span>
+            </p>
+        </div>
+    </footer>
+        
+
+</body> 
+
+
+<script type="text/javascript">
+     
+    var header_a = document.getElementsByClassName("header_a");
+    var logo_text = document.getElementById("logo_text");
+    var logo_img = document.getElementById("logo_img");
+
+    if(window.screen.width <720)
+    {
+
+        window.addEventListener("scroll", function(){
+        var header= document.querySelector("header");
+        
+        if(window.scrollY >0)
+        {
+            for(var i = 0; i<=6; i++)
+            {
+                header_a[i].style.color = "#2e2e2e";
+                
+                header_a[i].style.fontWeight = "bold";
+            }
+
+            logo_text.style.color = "#2e2e2e";   
+            logo_img.src="images/logo.png";
+
+            logo_text.style.fontWeight = "bold";   
+        }
+        else
+        {
+            for(var i = 0; i<=6; i++)
+            {
+                header_a[i].style.color = "white";
+                header_a[i].style.fontWeight = "normal";
+                
+            }
+
+            logo_text.style.color = "white";   
+            logo_text.style.fontWeight = "normal";   
+            logo_img.src="images/logo_white.png";
+        }
+        
+       
+
+
+            header.classList.toggle('sticky',window.scrollY > 0);
+            
+        });
+        
+    }
+    else
+    {
+        window.addEventListener("scroll", function(){
+        var header= document.querySelector("header");
+        
+        if(window.scrollY >0)
+        {
+            for(var i = 0; i<=6; i++)
+            {
+                header_a[i].style.color = "#2e2e2e";
+                
+                header_a[i].style.fontWeight = "bold";
+            }
+
+            logo_text.style.color = "#2e2e2e";   
+            logo_img.src="images/logo.png";
+
+            logo_text.style.fontWeight = "bold";   
+        }
+        else
+        {
+            for(var i = 0; i<=6; i++)
+            {
+                header_a[i].style.color = "white";
+                header_a[i].style.fontWeight = "normal";
+                
+            }
+
+            logo_text.style.color = "white";   
+            logo_text.style.fontWeight = "normal";   
+            logo_img.src="images/logo_white.png";
+        }
+        
+       
+
+
+            header.classList.toggle('sticky',window.scrollY > 0);
+            
+        });
+    }
+  
+    
+
+    
+    var menu= document.querySelector('.menu');
+    var menuBtn =document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+    var optionasap = document.getElementById('form-option-asap')
+    var optionsched = document.getElementById('form-option-schedule');
+    var senderbutton = document.getElementById('sender-button');
+    var recipientbutton = document.getElementById('recipient-button');
+    var schedulecontainer = document.getElementById('schedule-input-container');
+
+
+  
+
+    var optionselected = "form-option-button-selected";
+    var senderselected = "sender-recipient-selected";
+    var contentgone = "content-gone";
+    
+    function formOptionStyleClear()
+    {
+        optionasap.classList.remove(optionselected);
+        optionsched.classList.remove(optionselected);
+    }
+
+    function senderRecipientOptionStyleClear()
+    {
+        senderbutton.classList.remove(senderselected);
+        recipientbutton.classList.remove(senderselected);
+    }
+    
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+    });
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+    });
+
+    optionasap.addEventListener("click", () => {
+        formOptionStyleClear();
+        optionasap.classList.add(optionselected);
+        schedulecontainer.className ='schedule-input-gone';
+    })
+
+    optionsched.addEventListener("click", () => {
+        formOptionStyleClear();
+        optionsched.classList.add(optionselected);
+        schedulecontainer.className = 'schedule-input-visible';
+    })
+
+    senderbutton.addEventListener("click", () => {
+        senderRecipientOptionStyleClear();
+        senderbutton.classList.add(senderselected);
+    })
+
+    recipientbutton.addEventListener("click", () => {
+        senderRecipientOptionStyleClear();
+        recipientbutton.classList.add(senderselected);
+    })
+</script>
+</html>
